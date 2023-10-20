@@ -1,0 +1,459 @@
+﻿body {
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: #D7DDE5;
+    font-family: "Roboto", sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 5%;
+    align-items: center;
+    background: #18283B;
+}
+
+.logo {
+    color: #FFF;
+    font-size: 22px;
+}
+
+ul {
+    list-style: none;
+}
+
+    ul li {
+        display: inline-block;
+    }
+
+        ul li a {
+            text-decoration: none;
+            color: #8291A5;
+            padding: 8px 30px;
+            border-radius: 7px;
+            transition: all .3s ease;
+        }
+
+            ul li a:hover,
+            ul li a.active {
+                color: #FFF;
+                background: #0075FF;
+            }
+
+#icon {
+    background-color: #0075FF;
+    padding: 5px 7px 3px 7px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+    #icon svg {
+        color: #FFF;
+        height: 28px;
+        transition: all .3s ease;
+    }
+
+    #icon:hover {
+        background: #FFF;
+    }
+
+        #icon:hover svg {
+            color: #0075FF;
+        }
+
+#checkbox,
+#icon {
+    display: none;
+}
+/* Youtube link */
+.link {
+    position: fixed;
+    background-color: #D12322;
+    padding: 23px 40px;
+    right: -100px;
+    border-radius: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    transform: rotate(-90deg);
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFF;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .1s ease-in-out;
+}
+
+    .link i {
+        padding-left: 7px;
+    }
+
+    .link:hover {
+        text-decoration: underline;
+        background-color: black;
+    }
+
+@media screen and (max-width: 768px) {
+    nav {
+        border-bottom: 1px solid #455468;
+    }
+
+    ul {
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 71px);
+        background-color: #18283B;
+        left: 0;
+        top: 0;
+        text-align: center;
+        display: none;
+        margin-top: 71px;
+    }
+
+        ul li {
+            display: block;
+            padding: 10px 15px;
+        }
+
+            ul li a {
+                display: block;
+                padding: 10px 0;
+            }
+
+    #icon {
+        display: block;
+    }
+
+    #checkbox:checked ~ ul {
+        display: block;
+    }
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+main{}
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: black;
+}
+
+.outer-wrapper {
+    width: 50%;
+    margin: 50px auto;
+}
+
+.s-wrap {
+    width: 100%;
+    margin-bottom: 50px;
+    padding-bottom: 55%;
+    position: relative;
+    border: 10px solid #fff;
+    background-color: #efefe8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+    .s-wrap > input {
+        display: none;
+    }
+
+    .s-wrap .s-content {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 500%;
+        height: 100%;
+        font-size: 0;
+        list-style: none;
+        transition: transform 1s;
+    }
+
+    .s-wrap .s-item {
+        display: inline-block;
+        width: 20%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .s-wrap .s-item-1 {
+        background-image: url('images/اسد.jpg');
+    }
+
+    .s-wrap .s-item-2 {
+        background-image: url('images/باندا.jpg');
+    }
+
+    .s-wrap .s-item-3 {
+        background-image: url('images/زرافه.jpg');
+    }
+
+    .s-wrap .s-item-4 {
+        background-image: url('images/فيل.jpg');
+    }
+
+    .s-wrap .s-item-5 {
+        background-image: url('images/نمس.jpg');
+    }
+
+.s-type-1 .s-control {
+    position: absolute;
+    bottom: 18px;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+    transition-timing-function: ease-out;
+}
+
+    .s-type-1 .s-control > label[class^="s-c-"] {
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        margin-right: 10px;
+        border-radius: 50%;
+        border: 1px solid #999;
+        background-color: #efefe8;
+        cursor: pointer;
+    }
+
+.s-type-1 .s-nav label {
+    display: none;
+    position: absolute;
+    top: 50%;
+    padding: 5px 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+    .s-type-1 .s-nav label::before, .s-type-1 .s-nav label::after {
+        content: "";
+        display: block;
+        width: 8px;
+        height: 24px;
+        background-color: #fff;
+    }
+
+    .s-type-1 .s-nav label::before {
+        margin-bottom: -12px;
+    }
+
+    .s-type-1 .s-nav label.left {
+        left: 20px;
+    }
+
+        .s-type-1 .s-nav label.left::before {
+            transform: rotate(45deg);
+        }
+
+        .s-type-1 .s-nav label.left::after {
+            transform: rotate(-45deg);
+        }
+
+    .s-type-1 .s-nav label.right {
+        right: 20px;
+    }
+
+        .s-type-1 .s-nav label.right::before {
+            transform: rotate(-45deg);
+        }
+
+        .s-type-1 .s-nav label.right::after {
+            transform: rotate(45deg);
+        }
+
+.s-type-1 #s-1:checked ~ .s-content {
+    transform: translateX(0%);
+}
+
+.s-type-1 #s-1:checked ~ .s-control .s-c-1 {
+    background-color: #333;
+}
+
+.s-type-1 #s-1:checked ~ .s-nav .s-nav-1 {
+    display: block;
+}
+
+.s-type-1 #s-2:checked ~ .s-content {
+    transform: translateX(-20%);
+}
+
+.s-type-1 #s-2:checked ~ .s-control .s-c-2 {
+    background-color: #333;
+}
+
+.s-type-1 #s-2:checked ~ .s-nav .s-nav-2 {
+    display: block;
+}
+
+.s-type-1 #s-3:checked ~ .s-content {
+    transform: translateX(-40%);
+}
+
+.s-type-1 #s-3:checked ~ .s-control .s-c-3 {
+    background-color: #333;
+}
+
+.s-type-1 #s-3:checked ~ .s-nav .s-nav-3 {
+    display: block;
+}
+
+.s-type-1 #s-4:checked ~ .s-content {
+    transform: translateX(-60%);
+}
+
+.s-type-1 #s-4:checked ~ .s-control .s-c-4 {
+    background-color: #333;
+}
+
+.s-type-1 #s-4:checked ~ .s-nav .s-nav-4 {
+    display: block;
+}
+
+.s-type-1 #s-5:checked ~ .s-content {
+    transform: translateX(-80%);
+}
+
+.s-type-1 #s-5:checked ~ .s-control .s-c-5 {
+    background-color: #333;
+}
+
+.s-type-1 #s-5:checked ~ .s-nav .s-nav-5 {
+    display: block;
+}
+
+@keyframes slider-animation {
+    0%, 7% {
+        transform: translateX(0%);
+    }
+
+    12.5%, 19.5% {
+        transform: translateX(-20%);
+    }
+
+    25%, 32% {
+        transform: translateX(-40%);
+    }
+
+    37.5%, 44.5% {
+        transform: translateX(-60%);
+    }
+
+    50%, 57% {
+        transform: translateX(-80%);
+    }
+
+    62.5%, 69.5% {
+        transform: translateX(-60%);
+    }
+
+    75%, 82% {
+        transform: translateX(-40%);
+    }
+
+    87.5%, 94.5% {
+        transform: translateX(-20%);
+    }
+}
+<br>
+.spacer {
+    height: 535px;
+    border: solid red 1px
+}
+
+/* Colors and font sizes can be changed, everything else is required for a responsive footer. Links can be added and removed. The spacer above is not needed, it is just simulating space where content would normally go. */
+
+.footer {
+    width: 100%;
+    background-color: #18283B;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+    width: 80%;
+    max-width: 1280px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-icon {
+    min-width: 100px;
+    min-height: 100px;
+    border-radius: 50%;
+    background: rgb(18, 29, 56);
+}
+
+.footer-text {
+    margin: 0px 15px;
+    cursor: default;
+    user-select: none;
+}
+
+.footer-item {
+    color: white;
+    text-decoration: none;
+    margin: 5px 0px;
+    padding: 5px 10px 5px 10px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin: 20px 0px;
+    border-left: solid white 1px;
+    padding: 0px 50px;
+}
+
+.footer-item:hover {
+    background: rgb(18, 29, 56);
+}
+
+@media (max-width: 770px) {
+    .footer-logo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .links {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        border-right: solid white 1px;
+    }
+}
+
